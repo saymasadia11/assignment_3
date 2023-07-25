@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font-awasome -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d79b25c266.js" crossorigin="anonymous"></script>
     <!-- tailwind custom color -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -21,12 +28,62 @@
         }
     </script>
     <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
+        .font-lato {
+            font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav class=" flex flex-col ">
+          
+            <div class="flex flex-col  lg:px-8 mx-8 mt-8">
+                
+                <div class="navbar bg-base-100 rounded-full bg-[#F85559]">
+                    
+                      <div class="  pr-8">
+                       
+                      <div class="dropdown">
+                        
+                        <label tabindex="0" class="btn btn-ghost lg:hidden ">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
+                          <li><a>Home</a></li>
+                          <li><a>Service</a></li>
+                          <li><a>Cases</a> </li>
+                          <li><a>Blog</a></li>
+                        
+                        </ul>
+                      </div>
+                    
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                          <li><a>Cases</a> </li>
+                          <li><a>Blog</a></li>
+                       
+                    
+                      </ul>
+                    </div>
+                    <div class="flex items-center">
+                    <img class=" ml-16 lg:ml-48" src="./images/logo.png" alt="">
+                    <p>Fruit Burst</p>
+                    </div>
+                      <div class="navbar-end flex items-center">
+                       <input class=" hidden sm:inline-block rounded-full w-full max-w-[400px] h-[56px] pl-2 text-start" type="text" placeholder="Search here">
+                      <i class="hidden sm:inline-block fa-solid fa-magnifying-glass -ml-5"></i>
+                    </div>
+                </div>
+               
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
     
 </body>
 </html>
