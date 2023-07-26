@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +34,11 @@
         }
     </style>
 </head>
-<body>
-    <header>
+<body class="font-lato">
+    <header> 
+      <!-- nav section starts here -->
+
+        <div class="invisible md:visible">
         <nav class=" flex flex-col ">
           
             <div class="flex flex-col  lg:px-8 mx-8 mt-8">
@@ -43,9 +47,10 @@
                     
                       <div class="  pr-8">
                        
-                      <div class="dropdown">
+                      <div class="dropdown ">
                         
-                        <label tabindex="0" class="btn btn-ghost lg:hidden ">
+                        <label tabindex="0" class="pl-3 fa-solid fa-bars lg:hidden ">
+                          
                           <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
@@ -70,16 +75,43 @@
                     </div>
                     <div class="flex items-center">
                     <img class=" ml-16 lg:ml-48" src="./images/logo.png" alt="">
-                    <p>Fruit Burst</p>
+                    <p class="pl-2">Fruit Burst</p>
                     </div>
                       <div class="navbar-end flex items-center">
-                       <input class=" hidden sm:inline-block rounded-full w-full max-w-[400px] h-[56px] pl-2 text-start" type="text" placeholder="Search here">
+                       <input class=" hidden sm:inline-block rounded-full lg:w-full max-w-[400px] h-[56px] pl-2 text-start" type="text" placeholder="Search here">
                       <i class="hidden sm:inline-block fa-solid fa-magnifying-glass -ml-5"></i>
                     </div>
                 </div>
                
             </div>
         </nav>
+        </div>
+        <div class="visible md:invisible flex justify-between">
+          <div class="flex items-center flex-1 pl-3">
+            <img class="w-[27px] h-[30px]" src="./images/logo.png" alt="">
+            <p class="pl-2">Fruit Burst</p>
+            </div>
+            <div class="drawer flex-1 justify-end pr-3">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                  <!-- Page content here -->
+                  <label for="my-drawer" i class="fa-solid fa-bars btn  drawer-button "></i></label>
+                  <!-- <i class="fa-solid fa-bars btn  drawer-button "></i> -->
+                </div> 
+                <div class="drawer-side">
+                  <label for="my-drawer" class="drawer-overlay"></label>
+                  <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                    <!-- Sidebar content here -->
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                      <li><a>Cases</a> </li>
+                      <li><a>Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+
+             
+        </div>
 
           <!-- banner section -->
           <section class="w-full mt-10">
@@ -176,6 +208,127 @@
           
     </header>
     <main>
+      <!-- deal section starts -->
+      <section class="text-center my-24">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <div class="flex-row justify-start ml-4">
+        <h2 class=" text-3xl lg:text-5xl font-extrabold mb-5">Deal of the day</h2>
+        <p class="lg:max-w-3xl mb-10 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old. </p>
+          </div>
+          <div class="flex-row justify-end">
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                  
+                </span>
+                days
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:57;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+
+          </div>
+          </div>
+        <!-- fruit card container -->
+        <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- first card -->
+            <div class="card p-8 rounded-md border-gray-200 shadow-xl">
+                <figure><img src="./images/fruit6.png" alt="apple" /></figure>
+                <div class="card-body justify-center">
+                    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <p>Apples</p>
+                    <div class="rating justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="text-[#F85559]">Details</p>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="card p-8 rounded-md border-gray-200 shadow-xl">
+                <figure><img src="./images/fruit7.png" alt="orange" /></figure>
+                <div class="card-body justify-center">
+                    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <p>Orange</p>
+                    <div class="rating justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="text-[#F85559]">Details</p>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="card p-8 rounded-md border-gray-200 shadow-xl">
+                <figure><img src="/images/fruit8.png" alt="Dragon" /></figure>
+                <div class="card-body justify-center">
+                    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <p>Real Dragon</p>
+                    <div class="rating justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="text-[#F85559]">Details</p>
+                </div>
+            </div>
+            <!-- fourth card -->
+            <div class="card p-8 rounded-md border-gray-200 shadow-xl">
+                <figure><img src="/images/fruit9.png" alt="Banana" /></figure>
+                <div class="card-body justify-center">
+                    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+                    <p>Banana</p>
+                    <div class="rating justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                </div>
+                <p class="text-[#F85559]">Details</p>
+            </div>
+        </div>
+        <button class="bg-[#F85559] rounded-xl px-5 py-3 mt-5 text-white">Shop Now</button>
+
+    </section>
+    <!-- team section -->
+    <section>
+      <div class="hero min-h-[calc(100vh-252px)]" style="background-image: url('./images/banner1.png');">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     </main>
     
